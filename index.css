@@ -7,5 +7,5 @@
   box-shadow: 10px 10px rgba(103, 56, 148, 0.711);
   text-shadow: 3px 3px rgb(186, 39, 39);
   /* 숨길 때 대부분 display: none; 많이 사용 */
-  display:none;
+  display: none;
 }
