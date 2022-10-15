@@ -13,23 +13,26 @@
 
 <body>
   
-  <div class="alert-box" id="ab">짠~</div>
+  <div class="alert-box" id="idno">
+    <a id="vartxt"></a> 입력안하셨어요
+  <button onclick="box1('none')">닫기</button>
+  <!-- 파라미터가 2개일 때, 1개의 값만 전달하면 가장 앞의 속성을 변경 -->
+  </div>
   <br>
-
-  <!-- parameter사용하여 단일 함수로 여러기능 사용 -->
-  <button onclick="box1('block')">
-    나타나라
+  
+  <button onclick="box1('block', '아이디를')">
+    버튼1
   </button>
 
-  <button onclick="box1('none')">
-    사라져라
+  <button onclick="box1('block', '비번을')">
+    버튼2
   </button>
 
-  <!-- display 속성값에 parameter 대입하여, argument가 변경됨에 따라 다른 결과를 만들어냄 -->
 <script>
 
-  function box1(discon){
-    document.getElementById('ab').style.display=discon;
+  function box1(discon, intxt){
+    document.getElementById('idno').style.display=discon;
+    document.getElementById('vartxt').innerHTML=intxt;
   }
   
 </script>
